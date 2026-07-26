@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HaseebLio™ | Cyber Security Portfolio</title>
+
+<meta name="description" content="HaseebLio™ Cyber Security Portfolio - Developer, Linux, Networking and Cyber Security Projects.">
+
+<meta name="keywords" content="Cyber Security, Developer, Linux, Networking, HaseebLio">
+
+<meta name="author" content="HaseebLio">
+
+<meta name="theme-color" content="#00f5ff">
+
+<meta property="og:title" content="HaseebLio™ Cyber Portfolio">
+
+<meta property="og:description" content="Cyber Security Projects, Development and Technology.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:image" content="preview.png">
+
+<link rel="icon" href="favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<div id="ai-btn">🤖</div>
+
+<div id="ai-chat">
+
+<div class="ai-header">
+HASEEB AI
+</div>
+
+<div class="ai-body" id="ai-body">
+
+<div class="ai-message">
+👋 Welcome! Ask me about Haseeb Hashim.
+</div>
+
+</div>
+
+<div class="ai-input">
+
+<input
+type="text"
+id="ai-input"
+placeholder="Ask something...">
+
+<button id="ai-send">
+Send
+</button>
+
+</div>
+
+</div>
+
+
+<body>
+
+<!-- Matrix -->
+<canvas id="matrix"></canvas>
+
+<!-- Particles -->
+<canvas id="particles-bg"></canvas>
+
+<!-- Cursor -->
+<div id="cursor"></div>
+
+<!-- Scroll Progress -->
+<div id="progress-bar"></div>
+
+<!-- Loader -->
+<div id="loader">
+
+<div class="loader-logo">
+HASEEBLIO™
+</div>
+
+<div class="loader-text">
+Initializing Cyber World...
+</div>
+
+<div class="loader-progress">
+
+<div id="progress-fill"></div>
+
+</div>
+
+<div id="progress-number">
+0%
+</div>
+
+</div>
+
+<!-- Navbar -->
+
+
+<header>
+
+<nav class="navbar">
+
+<button id="menu-btn">
+☰
+</button>
+
+<div class="logo">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<span>HaseebLio™</span>
+
+</div>
+
+<ul class="nav-links">
+
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="nav-links" id="nav-links">
+
+<a href="#home">Home</a>
+<a href="#projects">Projects</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+<div class="nav-btn">
+
+<a href="#contact">
+
+Hire Me
+
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- Hero -->
+
+<section class="clock-section reveal">
+
+<div class="clock-card">
+
+<h2 id="live-time">00:00:00</h2>
+
+<p id="live-date">Loading...</p>
+
+</div>
+
+</section>
+
+<section id="home" class="hero">
+
+<div class="hero-left">
+
+<p class="hero-tag">
+
+WELCOME TO MY DIGITAL WORLD
+
+</p>
+
+<h1>
+
+Hi,
+
+I'm
+
+<span>
+
+Haseeb Hashim
+
+</span>
+
+</h1>
+
+<h2 id="typing">
+
+Cyber Security Specialist
+
+</h2>
+
+<p class="hero-desc">
+
+I build modern websites,
+
+learn Ethical Hacking,
+
+love Linux,
+
+and create premium cyber experiences.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="btn-primary">
+
+View Projects
+
+</a>
+
+<a href="#contact" class="btn-secondary">
+
+Contact Me
+
+</a>
+
+</div>
+
+<div class="social-icons">
+
+<a href="https://github.com/AbdulHaseebHashim" target="_blank">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+<a href="https://wa.me/923077425261" target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<a href="mailto:haseebjani826@gmail.com">
+
+<i class="fas fa-envelope"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="earth-box">
+
+<div id="earth-container"></div>
+
+<div class="floating-icons">
+
+<span class="icon i1">🐧</span>
+<span class="icon i2">⚡</span>
+<span class="icon i3">🛡️</span>
+<span class="icon i4">💻</span>
+<span class="icon i5">🌐</span>
+
+</div>
+
+<!-- Three.js Earth -->
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- About Section یہاں سے Part 2 میں شروع ہوگی -->
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="about">
+
+<div class="section-title">
+
+<div class="cyber-divider"></div>
+
+<h2>About Me</h2>
+<p>Know more about me</p>
+</div>
+
+<div class="about-container">
+
+<div class="about-image">
+<img src="https://i.postimg.cc/qv65yLc1/IMG-20260131-213816-469.webp" alt="Haseeb Hashim">
+</div>
+
+<div class="about-content">
+
+<h3>I'm Haseeb Hashim</h3>
+
+<h4>Cyber Security Student & Web Developer</h4>
+
+<p>
+I enjoy creating modern websites, learning Linux, networking,
+ethical hacking and building secure web applications with
+beautiful UI/UX.
+</p>
+
+<div class="about-info">
+
+<div>
+<span>Name</span>
+<p>Haseeb Hashim</p>
+</div>
+
+<div>
+<span>Email</span>
+<p>haseebjani826@gmail.com</p>
+</div>
+
+<div>
+<span>Location</span>
+<p>Pakistan</p>
+</div>
+
+<div>
+<span>Experience</span>
+<p>Web Development</p>
+</div>
+
+</div>
+
+<a href="#contact" class="btn-primary">
+Let's Talk
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="terminal-section">
+
+<h2 class="section-title">Live Linux Terminal</h2>
+
+<div class="terminal">
+
+<div class="terminal-header">
+<span class="red"></span>
+<span class="yellow"></span>
+<span class="green"></span>
+</div>
+
+<pre id="terminal-text"><span id="cursor">_</span></pre>
+
+</div>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="skills">
+
+<div class="section-title">
+
+<div class="cyber-divider"></div>
+
+<h2>My Skills</h2>
+
+<p>Technologies I Love</p>
+
+</div>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+<i class="fa-solid fa-shield-halved"></i>
+<h3>Cyber Security</h3>
+<p>Network Security & Ethical Hacking</p>
+</div>
+
+<div class="skill-card">
+<i class="fa-brands fa-html5"></i>
+<h3>HTML5</h3>
+<p>Modern Semantic HTML</p>
+</div>
+
+<div class="skill-card">
+<i class="fa-brands fa-css3-alt"></i>
+<h3>CSS3</h3>
+<p>Animations & Responsive UI</p>
+</div>
+
+<div class="skill-card">
+<i class="fa-brands fa-js"></i>
+<h3>JavaScript</h3>
+<p>Interactive Applications</p>
+</div>
+
+<div class="skill-card">
+<i class="fa-brands fa-linux"></i>
+<h3>Linux</h3>
+<p>CLI & System Administration</p>
+</div>
+
+<div class="skill-card">
+<i class="fa-brands fa-python"></i>
+<h3>Python</h3>
+<p>Automation & Security Scripts</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+<div class="stat-box">
+
+<h2>15+</h2>
+
+<p>Projects</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2>100%</h2>
+
+<p>Passion</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2>24/7</h2>
+
+<p>Learning</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2>∞</h2>
+
+<p>Creativity</p>
+
+</div>
+
+</section>
+
+<section id="skills" class="skills-section">
+
+<div class="cyber-divider"></div>
+
+<h2 class="section-title">My Skills</h2>
+
+<div class="skill">
+    <span>HTML & CSS</span>
+    <div class="progress">
+        <div class="progress-fill" data-width="95%"></div>
+    </div>
+</div>
+
+<div class="skill">
+    <span>JavaScript</span>
+    <div class="progress">
+        <div class="progress-fill" data-width="85%"></div>
+    </div>
+</div>
+
+<div class="skill">
+    <span>Linux</span>
+    <div class="progress">
+        <div class="progress-fill" data-width="90%"></div>
+    </div>
+</div>
+
+<div class="skill">
+    <span>Cyber Security</span>
+    <div class="progress">
+        <div class="progress-fill" data-width="88%"></div>
+    </div>
+</div>
+
+</section>
+
+<div class="cyber-divider"></div>
+
+<section class="github-section reveal" id="github">
+
+<h2 class="section-title">GitHub Profile</h2>
+
+<div class="github-card">
+
+<img
+src="https://github.com/AbdulHaseebHashim.png"
+alt="GitHub Avatar"
+class="github-avatar">
+
+<h2>AbdulHaseebHashim</h2>
+
+<p>Cyber Security • Developer • Open Source</p>
+
+<a
+href="https://github.com/AbdulHaseebHashim"
+target="_blank"
+class="github-btn">
+
+Visit GitHub
+
+</a>
+
+</div>
+
+</section>
+
+<div class="cyber-divider"></div>
+
+<section class="services reveal" id="services">
+
+<h2 class="section-title">My Services</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<h3>🛡 Cyber Security</h3>
+<p>Security Analysis, Ethical Hacking & Vulnerability Assessment.</p>
+</div>
+
+<div class="service-card">
+<h3>💻 Web Development</h3>
+<p>Modern, Fast & Responsive Websites with Premium UI.</p>
+</div>
+
+<div class="service-card">
+<h3>🤖 Bot Development</h3>
+<p>WhatsApp Bots, Telegram Bots & Automation Systems.</p>
+</div>
+
+<div class="service-card">
+<h3>🐧 Linux Administration</h3>
+<p>Linux Server Setup, Networking & System Management.</p>
+</div>
+
+<section class="world-section reveal">
+
+<h2 class="section-title">
+Cyber Network Map
+</h2>
+
+<div class="world-map">
+
+<div class="line line1"></div>
+<div class="line line2"></div>
+<div class="line line3"></div>
+
+<div class="node n1"></div>
+<div class="node n2"></div>
+<div class="node n3"></div>
+<div class="node n4"></div>
+
+</div>
+
+</section>
+
+</div>
+
+</section>
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="projects">
+
+<div class="section-title">
+
+<h2>Featured Projects</h2>
+
+<p>Some of my work</p>
+
+</div>
+
+<div class="project-grid">
+
+<div class="project-card">
+
+<h3>Cyber Portfolio</h3>
+
+<p>Premium personal portfolio website.</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>WhatsApp Bot</h3>
+
+<p>Node.js WhatsApp automation bot.</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>Password Generator</h3>
+
+<p>Strong random password generator.</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>Linux Dashboard</h3>
+
+<p>System monitoring dashboard.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="cyber-divider"></div>
+
+<section class="projects reveal" id="projects">
+
+<h2 class="section-title">Featured Projects</h2>
+
+<div class="project-grid">
+
+<div class="project-card">
+<h3>Cyber Portfolio</h3>
+<p>Modern Cyber Security Portfolio with 3D Earth & Matrix.</p>
+
+<div class="project-buttons">
+<a href="https://github.com/AbdulHaseebHashim" target="_blank">GitHub</a>
+<a href="#">Live Demo</a>
+</div>
+</div>
+
+<div class="project-card">
+<h3>WhatsApp Bot</h3>
+<p>Advanced Multi Device WhatsApp Bot built with Node.js.</p>
+
+<div class="project-buttons">
+<a href="https://github.com/AbdulHaseebHashim" target="_blank">GitHub</a>
+<a href="#">Live Demo</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact Section Part 3 میں شروع ہوگی -->
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact">
+
+<div class="cyber-divider"></div>
+
+<div class="section-title">
+<h2>Contact Me</h2>
+<p>Let's Build Something Amazing</p>
+</div>
+
+<div class="contact-container">
+
+<div class="contact-info">
+
+<h3>Get In Touch</h3>
+
+<p>
+Feel free to contact me for Cyber Security,
+Web Development or Freelance Projects.
+</p>
+
+<div class="contact-item">
+<i class="fas fa-envelope"></i>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=haseebjani826@gmail.com" target="_blank">
+  haseebjani826@gmail.com
+</a>
+
+</div>
+
+<div class="contact-item">
+<i class="fab fa-whatsapp"></i>
+<a href="https://wa.me/923077425261" target="_blank">
+wa.me/923077425261
+</a>
+
+</div>
+
+<div class="contact-item">
+<i class="fab fa-github"></i>
+
+<a href="https://github.com/AbdulHaseebHashim" target="_blank">
+github.com/AbdulHaseebHashim
+</a>
+
+</div>
+
+</div>
+
+<form class="contact-form">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input type="text" placeholder="Subject">
+
+<textarea rows="6" placeholder="Your Message"></textarea>
+
+<button type="submit" class="btn-primary">
+
+Send Message
+
+<section class="dashboard reveal">
+
+<div class="dash-card">
+<h3>🟢 System Status</h3>
+<h2 id="statusText">ONLINE</h2>
+</div>
+
+<div class="dash-card">
+<h3>🛡 Security</h3>
+<h2>99%</h2>
+</div>
+
+<div class="dash-card">
+<h3>🌍 Global Nodes</h3>
+<h2 id="nodes">128</h2>
+</div>
+
+<div class="dash-card">
+<h3>⚡ AI Engine</h3>
+<h2 class="active">ACTIVE</h2>
+</div>
+
+</section>
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-content">
+
+<h2>HaseebLio™</h2>
+
+<p>
+Cyber Security • Web Developer • Linux Enthusiast
+</p>
+
+<div class="footer-social">
+
+<a href="https://github.com/AbdulHaseebHashim" target="_blank">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="https://wa.me/923077425261" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<a href="mailto:haseebjani826@gmail.com">
+<i class="fas fa-envelope"></i>
+</a>
+
+</div>
+
+<p class="copyright">
+
+© 2026 HaseebLio™. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<!-- Floating AI Button -->
+
+<div id="ai-button">
+
+<i class="fa-solid fa-robot"></i>
+
+</div>
+
+<!-- Theme Toggle -->
+
+<div id="theme-toggle">
+
+<i class="fa-solid fa-moon"></i>
+
+</div>
+
+<!-- Scroll Top -->
+
+<div id="scroll-top">
+
+<i class="fas fa-arrow-up"></i>
+
+</div>
+
+<!-- Scripts -->
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+<script src="js/matrix.js"></script>
+
+<script src="js/earth.js"></script>
+
+<script src="js/terminal.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
