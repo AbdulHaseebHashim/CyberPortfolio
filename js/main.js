@@ -352,7 +352,10 @@ header.style.boxShadow="none";
    MATRIX RAIN EFFECT
 ========================================== */
 
-const canvas = document.getElementById("matrix");
+const canvas = document.getElementById("matrix-canvas");
+
+if(canvas){
+
 const ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
