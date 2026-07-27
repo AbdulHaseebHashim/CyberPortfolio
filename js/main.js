@@ -926,3 +926,12 @@ document.body.classList.toggle("hacker-mode");
 }
 
 });
+const enterBtn = document.getElementById("enterBtn");
+const introVoice = document.getElementById("introVoice");
+
+enterBtn.addEventListener("click", () => {
+    introVoice.play();
+
+    enterBtn.innerHTML = "🌐 Welcome To HaseebLio™";
+    enterBtn.style.opacity = "0.7";
+});
